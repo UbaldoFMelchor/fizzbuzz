@@ -1,5 +1,4 @@
 const Reader = require("./../lib/utils/Reader")
-const ExplorerServices = require("./../lib/services/ExplorerServices")
 
 describe("Test para Reader", () => {
     test('1.- Reader ok', () => {
@@ -8,11 +7,5 @@ describe("Test para Reader", () => {
       });
 })
 
-describe("Test para ExplorerServices", () => {
-    test('1.- filterbymission', () => {
-        const explorers = [{mission: "node"}]
-        const explorersInNode = ExplorerServices.filterByMission(explorers, "node");
-            expect(explorersInNode.length).toBe(1);
-    
-    });
-})
+
+
