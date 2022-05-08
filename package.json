@@ -11,6 +11,7 @@
   "author": "Ubaldo F Melchor",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.1",
     "jest": "^26.6.3"
   },
   "devDependencies": {
