@@ -18,4 +18,18 @@ describe("Test para fizzbuzzservices", () => {
         const explorerFizzBuzz =fizzbuzzservice.applyValidationInExplorer(explorer15);
         expect(explorerFizzBuzz.trick).toBe("FIZZBUZZ");
     });
+
+    test("2.- ApplyValidation in number", () => {
+        const number1 = fizzbuzzservice.applyValidationInNumber(1)
+        expect(number1).toBe(1)
+
+        const number3 = fizzbuzzservice.applyValidationInNumber(3)
+        expect(number3).toBe("FIZZ")
+
+        const number5 = fizzbuzzservice.applyValidationInNumber(5)
+        expect(number5).toBe("BUZZ")
+
+        const number15 = fizzbuzzservice.applyValidationInNumber(15)
+        expect(number15).toBe("FIZZBUZZ")
+    })
 });
