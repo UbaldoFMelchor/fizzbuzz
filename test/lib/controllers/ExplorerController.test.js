@@ -18,4 +18,18 @@ describe("Test para ExplorerController", () => {
         const ExplorersAmountByMission = ExplorerController.getExplorersAmountByMission("java");
         expect(ExplorersAmountByMission).toBe(5);
     });
+
+    test("4.- getApplyValidationInNumber", () => {
+        const applyValidationInNumber15 = ExplorerController.getApplyValidationInNumber(15);
+        expect(applyValidationInNumber15).toBe("FIZZBUZZ")
+
+        const applyValidationInNumber5 = ExplorerController.getApplyValidationInNumber(5);
+        expect(applyValidationInNumber5).toBe("BUZZ")
+
+        const applyValidationInNumber3 = ExplorerController.getApplyValidationInNumber(3);
+        expect(applyValidationInNumber3).toBe("FIZZ")
+
+        const applyValidationInNumber1 = ExplorerController.getApplyValidationInNumber(1);
+        expect(applyValidationInNumber1).toBe(1)
+    })
 });
