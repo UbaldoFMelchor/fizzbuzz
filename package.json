@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "bot": "node ./lib/bot.js",
     "test": "jest",
     "linter": "eslint .",
     "linter-fix": "eslint . --fix",
